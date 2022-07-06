@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 :root {
-  --color-green: #800080;
+  --color-green: #710CE8;
   --color-black: white;
 }
 
@@ -11,7 +11,8 @@
   border: 0; /* Zeramos o border */
 } /* Com isto acima, ressetamos estas propriedades */
 body {
-  background: #282a36; /* Cor de fundo */
+  background-image: url("./img/thumb-1920-1011899.jpg");
+  /* background: #282a36; */
   font-family: 'Roboto Condensed', sans-serif; /* Definimos o tipo de fonte */
   color: white;
 }
@@ -19,7 +20,7 @@ header {
   padding: 32px; /* Superfície ligada diretamente ao conteúdo 
                     (top/left/bottom/right) */
   border-bottom: 1px solid #333; /* Cor da borda inferior */
-  background: rgba(0, 0, 0, 0.1); /* Red-green-blue-alpha-opacity
+  background: rgba(0, 0, 0, 0.5); /* Red-green-blue-alpha-opacity
   o alpha-opacity define a opacidade em uma faixa de valores decimais 
   de 0 até 1. Opacidade especifica a transparência de um elemento */ 
 }
@@ -50,6 +51,7 @@ header {
   border: 5px solid var(--color-green); /* Arredonda a imagem da div */
   margin-bottom: 32px; /* Espaçamento inferior da Margem da imagem da div */
   height: 300px; /* Altura da imagem */
+  transition: all 0.2s linear;
 }
 #wrapper h1 {
   font-size: 42px; /* Tamanho da fonte */
@@ -82,4 +84,26 @@ header {
                                                /* colocado no seletor ".links a" */          
 }
 #red { color: rgb(17, 255, 57)
+}
+
+#wrapper img:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+
+  .text p {
+    max-width: 500px; /* Define o tamanho máximo da linha, fazendo a quebra caso ultrapasse */
+    margin: 32px auto; /* Espaço superior da linha de 32px e */
+    text-align:center;    /* laterais automáticas (centraliza - auto)  */
+    font-size: 24px; 
+    line-height: 34px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
 }
