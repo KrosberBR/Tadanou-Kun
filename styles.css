@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 :root {
   --color-green: #710CE8;
   --color-black: white;
@@ -12,9 +11,13 @@
 } /* Com isto acima, ressetamos estas propriedades */
 body {
   background-image: url("./img/thumb-1920-1011899.jpg");
-  /* background: #282a36; */
-  font-family: 'Roboto Condensed', sans-serif; /* Definimos o tipo de fonte */
+  background-repeat:no-repeat;
+  font-family: 'Dosis', sans-serif; /* Definimos o tipo de fonte */
   color: white;
+  padding: 0px;
+  margin: 0px;
+  background-size: contain;
+
 }
 header {
   padding: 32px; /* Superfície ligada diretamente ao conteúdo 
