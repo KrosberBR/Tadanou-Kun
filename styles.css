@@ -34,7 +34,7 @@ header {
 }
 .links a { /* Passamos a referenciar a classe links */
   color: white; /* Cor branca para o texto contido na tag a */
-  font-size: 18px; /* Definimos um tamanho de 18 pixels para a fonte */
+  font-size: 25px; /* Definimos um tamanho de 18 pixels para a fonte */
   line-height: 28px; /* Define a altura do texto. Recomenda-se atribuir */
                      /* uma quantidade de 10 pixels a mais daquela */
                      /* atribuída ao tamanho da fonte.*/
