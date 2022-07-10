@@ -163,3 +163,12 @@ header {
   -webkit-transform: scale(1.05);
   transform: scale(1);
 }
+
+.cards2 { /* Estilizando a section cards */
+  max-width: 620px; /* Limite máximo de largura */
+  margin: 0 auto;   /* Alinhamento ao centro */
+  display: grid;    /* Insere o container numa grid */
+  grid-template-columns: 1fr 1fr; /* Define 3 colunas */
+  gap: 20px; /* Espaçamento entre as células de 20px*/
+  padding: 2%;
+}
