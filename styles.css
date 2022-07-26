@@ -171,3 +171,72 @@ header {
   gap: 20px; /* Espaçamento entre as células de 20px*/
   padding: 2%;
 }
+
+.card__content2
+.card__info2 {
+  padding: 50px; /* Espaçamento superior e inferior e nas laterais lateral */
+  font-size:small  ;
+}
+
+.card__info2 {
+  display: grid; /* Definimos que o container estará inserido num grid */
+  grid-template-columns: 1fr 1fr; /* Definimos duas colunas (fraction) */ 
+}
+
+.card__price2 {
+  background-color: rgb(0, 140, 255); /* A cor do card__price("Free") é a mesma */
+  filter: brightness(90%); /* No entanto, inserimos um brilho ne grade de 90% */
+  padding: 5px 20px; /* 5px nas partes superior e inferior e 20px nas laterais */
+  border-radius: 20px; /* Borda arredondada para o grid "Free" */
+  text-align: center; /* Texto alinhado ao centro */
+  color: white;
+  font-size: larger;
+  transition: all 0.2s linear;
+}
+
+#Card__price2:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1);
+}
+
+/* === Configurações para a Janela Modal não sendo exibida === */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo transparente com uma força de 70% */
+  width: 100%; /* Largura do Modal */
+  height: 100%; /* Altura do Modal */
+  position: fixed; /* Fixa o Modal na tela */
+  top: 0; /* Fixa o Modal numa posição de topo do formulário */
+  opacity: 0; /* Valores entre 0 e 1, 0=completamente transparente e 1=totalmente opaco*/
+  visibility: hidden; /* deixa de exibir o elemento, ele deixa de ser visível na página */
+}
+.modal {
+  background-color: white; /* Cor de fundo branca */
+  width: 90%; /* Largura ocupada de 90% */
+  height: 90%; /* Altura ocupada de 90% */
+  margin: 5vh auto; /* Posição 5vh de alinhamento nas partes superior e inferior e */
+                  /* alinhamento automático (centralizado) nas laterais. */
+                  /* 5vh corresponde a 5px da visão da altura (vh), ou seja, se a */
+                  /* altura da janela for redimensionada será preservado o alinhamento */
+  position: relative; /* Permitirá que a estilização abaixo (.modal .close-modal) */ 
+                      /* referente ao ícone "x" seja relativa a esta janela modal branca */                
+}
+.modal .close-modal {
+  color: black; /* A cor do ícone será preta */
+  position: absolute; /* permite o posicionamento do elemento em qualquer local dentro */
+                      /* do modal definido acima */ 
+  right: 8px; /* Afastamento do canto direito da janela modal branca */
+  top: 8px; /* Afastamento do topo superior direito da janela modal branca */
+  cursor: pointer; /* Transforma o ícone em uma mãozinha quando passamos o mouse sobre ele */
+}
+/* === Configurações para a Janela Modal sendo exibida === */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;  
+}
+/* === Configurações do iframe === */
+iframe {
+    width: 100%; /* Largura de 100% para o iframe */
+    height: 90%; /* A altura de 90% nos permitirá visualizar o botão close (X) */
+    position: absolute; /* Preenche todo o espaço do contexto definido acima */
+    top: 5%; /* Espaçamento superior de 5% do container (permitirá aparecer o X) */
+}
